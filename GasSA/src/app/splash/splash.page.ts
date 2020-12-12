@@ -14,8 +14,6 @@ export class SplashPage implements OnInit {
       this.router.navigateByUrl('register');
     },2000);
   }
-
-
   ngOnInit() {
   }
 

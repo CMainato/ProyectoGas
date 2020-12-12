@@ -19,7 +19,6 @@ export class RegisterPage implements OnInit {
     try{
       const user = await this.authSvc.register(email.value,password.value);
     if (user){
-      console.log('User',user);
       const isVerified = this.authSvc.isEmailVerified(user);
       this.redirectUser(isVerified);
     }
@@ -29,7 +28,7 @@ export class RegisterPage implements OnInit {
     }
   }
 
-  private redirectUser(isVerified:boolean){
+  private redirectUser(isVerified:boolean): void{
     if(isVerified){
       this.router.navigate(['home']);
     }else{

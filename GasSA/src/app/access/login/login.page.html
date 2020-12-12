@@ -25,16 +25,31 @@
       expand="block">Ingresar</ion-button>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>
+          <a routerLink="/forgot-password"> Olvide la contraseña</a>
+        </p>
+      </ion-col>
+    </ion-row>
 
-    <span class="diveder line one-line">
+    <span class="center-spam">
       or
     </span>
 
     <ion-row>
       <ion-col> 
-      <ion-button type="submit" color="danger" (click)="onLoginGoogle(email, password)" 
+      <ion-button type="submit" color="danger" (click)="onLoginGoogle()" 
       expand="block">Ingresar con Google</ion-button>
       </ion-col>
     </ion-row>
   </form>
+
+  <ion-row>
+    <ion-col>
+      <p>
+        <a routerLink="/register"> Crea una cuenta</a>
+      </p>
+    </ion-col>
+  </ion-row>
 </ion-content>
