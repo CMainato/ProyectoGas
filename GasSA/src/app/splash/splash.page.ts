@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./splash.page.scss'],
 })
 export class SplashPage implements OnInit {
-
+  //redirigir el splash
   constructor(public router: Router) { 
     setTimeout(()=>{
-      this.router.navigateByUrl('home');
+      this.router.navigateByUrl('register');
     },2000);
   }
 
