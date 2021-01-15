@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.authSvc.user$.pipe(
-      take(1),
+      take(2),
       map(user =>{
         console.log('User',user);
         if(user){

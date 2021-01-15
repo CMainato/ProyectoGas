@@ -15,6 +15,7 @@ export class AppComponent {
     public router: Router
   ) {
     this.initializeApp();
+    
   }
 
   initializeApp() {
@@ -23,5 +24,6 @@ export class AppComponent {
       this.router.navigateByUrl('splash');
     
     });
+   
   }
 }

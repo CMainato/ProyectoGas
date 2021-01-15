@@ -11,7 +11,7 @@ export class SplashPage implements OnInit {
   //redirigir el splash
   constructor(public router: Router) { 
     setTimeout(()=>{
-      this.router.navigateByUrl('register');
+      this.router.navigateByUrl('login');
     },2000);
   }
   ngOnInit() {

@@ -91,13 +91,12 @@ private updateUserData(user:User){
   const userRef:AngularFirestoreDocument<User> = this.afs.doc(`users/${user.uid}`);
   const data:User = {
     uid: user.uid,
-    email:user.email,
-    emailVerified:user.emailVerified,
+    email: user.email,
+    emailVerified: user.emailVerified,
     displayName: user.displayName,
   };
 
   return userRef.set(data, {merge: true});
+
 }
-
-
 }
