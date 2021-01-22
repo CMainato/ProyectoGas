@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Gas.SA
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-img class="img" src="assets/icon/logo1.jpg"> </ion-img>
+
+
+
+  <ion-row>
+    <ion-col> 
+    <ion-button class="register" type="submit" color="success" (click)="onRegister()" 
+    >Registrar</ion-button>
+    </ion-col>
+  </ion-row>
+
 </ion-content>
