@@ -1,7 +1,0 @@
-{
-  "name": "GasSA",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
