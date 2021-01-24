@@ -94,6 +94,7 @@ private updateUserData(user:User){
     email: user.email,
     emailVerified: user.emailVerified,
     displayName: user.displayName,
+
   };
 
   return userRef.set(data, {merge: true});

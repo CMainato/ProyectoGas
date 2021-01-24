@@ -3,6 +3,36 @@
     text-align: center;
 }
 
-p{
+p,a{
+    text-align: right;
+    color: black;
+    
+}
+
+.googleicon{
     text-align: right;
 }
+
+.btngoogle{
+    --background: rgb(187, 20, 20);
+
+}
+
+img{
+    margin-right: 10%;
+    text-align: center;
+}
+
+.menu{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.color{
+    --background: #015A06;
+}
+
+.color2{
+    --background: red;
+}
+

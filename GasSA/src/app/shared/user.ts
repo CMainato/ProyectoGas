@@ -5,3 +5,9 @@ export interface User {
     displayName: string;
     emailVerified: boolean;
  }
+
+export interface FormUser {
+    name: string;
+    lastname: string;
+    mobile: number;
+ }
