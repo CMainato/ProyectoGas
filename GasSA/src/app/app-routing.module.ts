@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { SetProductosComponent } from './backend/set-productos/set-productos.component';
+import { HomeComponent } from './pages/home/home.component';
 import {AuthGuard} from './shared/auth.guard'
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
-    canActivate: [AuthGuard],
-  },
+
+  //pages
+  {path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
+  {path: 'set-products', component: SetProductosComponent},
+
+
+  //autenticacion
  
   {
     path: 'splash',
@@ -29,10 +33,7 @@ const routes: Routes = [
     path: 'verify-email',
     loadChildren: () => import('./access/verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
   },
-  {
-    path: 'form-user',
-    loadChildren: () => import('./form/user/user.module').then( m => m.UserPageModule)
-  },
+ 
 
 
 
