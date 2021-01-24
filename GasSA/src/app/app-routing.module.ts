@@ -29,6 +29,11 @@ const routes: Routes = [
     path: 'verify-email',
     loadChildren: () => import('./access/verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
   },
+  {
+    path: 'form-user',
+    loadChildren: () => import('./form/user/user.module').then( m => m.UserPageModule)
+  },
+
 
 
 
